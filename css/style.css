@@ -1,0 +1,597 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;    /* 기본 여백 제거 */
+    background-color: #fafafa;
+}
+
+body, button, input, textarea {
+	font-family: -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,Helvetica,Arial,sans-serif;
+	line-height: 18px;    /* 검색 input에서 보고 넣었는데 어느 요소에 영향을 미치는 건지 다시 확인 */
+}
+
+a, a:visited {
+    color: #003569;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+hr {
+    margin: 0 0 12px 0;
+}
+
+/* 아이콘 */
+.reaction_icons span, .etc_part span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/instagram_static_icons_01.png);
+    background-size: 429px 398px;
+    background-repeat: no-repeat;
+}
+
+/* 헤더 : header_nav */
+.header_navbar {
+    position: fixed;
+    text-align: center;    /* 왜 margin: 0 auto;는 안되나? */
+    padding: 25px 40px;
+    top: 0;    /* 좌상단을 기준으로 붙임 */
+    left: 0;
+    height: 77px;
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #e6e6e6;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.header_site {
+    display: inline-block;
+    text-align: left;
+    width: 357.5px;
+    height: 35px;
+}
+
+.header_site_inner {
+    display: inline-block;
+}
+
+.header_site .go_feed {
+    display: inline-block;
+    width: 176px;
+    height: 35px;
+    background-image: url(/images/instagram_static_icons_01.png);
+    background-position: 0 -134px;
+    background-size: 429px 398px;
+    background-repeat: no-repeat;
+}
+
+.go_feed .left_logo {
+    width: 30px;
+    height: 30px;
+}
+.go_feed .left_logo>img {
+    width: 30px;
+    height: 30px;
+}
+
+.go_feed .right_menu>img {
+    display: inline-block;
+    width: 110px;
+}
+
+.header_search {
+    display: inline-block;
+    background: #fafafa;
+}
+
+/* 검색창 내부 아이콘 표시 미완성 */
+/*
+.header_search_inner {
+    display: inline;
+}
+
+.search_icon {
+    width: 10px;
+    height: 10px;
+    background-image: url(/images/instagram_static_icons_01.png);
+    background-size: 429px 398px;
+    background-repeat: no-repeat;
+    background-position: -413px -236px;
+}
+*/
+
+.header_navbar>li {
+    display: inline-block;
+}
+
+.header_search {
+    min-width: 125px;
+    width: 215px;
+    height: 28px;
+}
+
+.input_search {
+    padding: 3px 10px 3px 26px;    /* top-right-bottom-left */
+    height: 100%;
+    width: 100%;
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    color: #262626;
+    font-size: 14px;
+    outline: none;    /* input에 포커스 잡혔을 때 파란색 테두리 효과를 없앤다 */
+    /*    z-index: 2; - 이 속성은 무엇인지 찾아보기 */
+}
+
+.header_nav {
+    display: inline-block;
+    text-align: right;
+    width: 357.5px;
+    height: 24px;
+}
+
+.header_nav>div:not(:first-child) {
+    margin-left: 30px;
+}
+
+.find_people, .activity_feed, .profile {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/instagram_static_icons_01.png);
+    background-size: 429px 398px;
+    background-repeat: no-repeat;
+}
+
+.find_people a, .activity_feed a, .profile a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.find_people {
+    background-position: -335px -310px;
+    padding-left: 24px;
+}
+
+.activity_feed {
+    background-position: -360px -310px;
+}
+
+.profile {
+    background-position: -388px -25px;
+}
+
+
+/* 본문 시작 : article_list + sidebar */
+.container_wrap {
+    padding-top: 135px;
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+.article_list {
+    float: left;
+    padding-top: 0;
+/*    padding-bottom: 7321.49px;*/
+    width: 616px;
+}
+
+.article {
+    width: 616px;
+    height: auto;
+    margin-bottom: 60px;
+    border: solid 1px #e6e6e6;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.article_header {
+    width: 100%;
+    position: relative;
+    padding: 16px;
+    border-bottom: 0.5px solid #efefef;
+}
+
+.article_header::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.article_header_inner {
+    display: inline-block;
+    height: 27.5px;
+}
+
+.article_header .header_profile_pic {
+    float: left;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.article_header .header_profifle_pic a {
+    display: block;
+}
+
+.article_header .header_profile_pic a>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;    /* img를 둥글게 표시 */
+    border: solid 1px #e6e6e6;
+}
+
+.article_header .header_user_id {
+    float: left;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 12px;
+    width: 530px;
+    height: 18px;
+    color: #262626;
+    font-weight: 600;
+}
+
+.article_photo {
+/*    background-color: #efefef;*/
+}
+
+.article_photo .photo img {
+/*
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+*/
+    height: 100%;
+    width: 614px;
+}
+
+/* 사진이 여러장일 때 하단에 나타나는 땡땡이 */
+/* 만약 사진이 여러장인 경우에는 margin-bottom: - 값으로 줄 수 있도록 처리 가능한지 */
+.photo_nav {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.photo_nav_spot {
+    display: inline-block;
+    position: absolute;
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.photo_nav_spot .selected_spot, .not_selected_spot {
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.selected_spot {
+    background: #3897f0;
+}
+
+.not_selected_spot {
+    background: #dbdbdb;
+}
+
+.article_contents {
+    padding: 0 16px;
+    position: relative;
+}
+
+.article_contents .reaction_icons {
+}
+    /* like, commnet, save 버튼 공통 */
+.reaction_icons .like_this, .like_this_liked, .leave_comment, .save_this {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.reaction_icons_left {
+    display: inline-block;
+}
+
+.reaction_icons_right {
+    display: inline-block;
+    margin-left: 469px;
+    margin-right: -8px;
+    text-align: right;
+}
+
+    /* like 아이콘 */
+.reaction_icons .like_this>span {
+    background-position: -125px -351px;
+}
+.reaction_icons .like_this, .like_this_liked {
+    margin-left: -8px;
+}
+
+.reaction_icons .like_this_liked>span {
+    background-position: -100px -351px;
+}
+
+    /* 댓글 아이콘 */
+.reaction_icons .leave_comment>span {
+    background-position: -359px -247px;
+}
+
+    /* 저장 아이콘 */
+.reaction_icons .save_this>span {
+    background-position: -150px -351px;
+}
+
+.how_many_likes {
+    margin-bottom: 8px;
+}
+
+.how_many_likes .num_likes {
+    font-weight: 600;
+    color: #262626;
+}
+
+
+.article_contents .text_and_comments {
+    margin-bottom: 4px;
+}
+
+.text_and_comments .userid {
+    color: #262626;
+    margin-right: 0.3em;
+    font-weight: 600;
+}
+
+.text_and_commnets .comment_tag {
+    color: #003569;
+}
+
+.text_and_comments .comment {
+    word-wrap: break-word;
+}
+
+.text_and_comments .text {
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+.text a {
+    color: #999;
+}
+
+.text_and_comments .view_all_comments {
+    padding-bottom: 8px;
+}
+
+.view_all_comments a {
+    color: #999;
+}
+
+.text_and_comments .comment {
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+    /* 작성 시간 표시부 */
+.datetime_part {
+    margin-bottom: 8px;
+}
+
+.datetime_part .written_by {
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    text-transform: uppercase;    /* 모든 문자를 대문자로 변환 */
+}
+
+    /* 댓글 작성 부분 */
+.comment_section {
+    padding: 16px 0;
+    padding-right: 26px;
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 56px;
+    border-top: 1px solid #efefef;
+    color: #999;
+}
+
+.comment_section .write_comment>textarea {
+    width: 100%;
+    background: 0 0;
+    border: none;
+    color: #262626;
+    font-size: inherit;
+    height: 18px;
+    max-height: 80px;
+    outline: none;
+    padding: 0;
+    resize: none;    /* textarea 사이즈 조절 막기 */
+    line-height: 18px;
+    cursor: text;
+    white-space: pre-wrap;
+    word-wrap: break-word;    /* 줄바꿈 속성 : break-word 강제로 끊어서 줄바꿈 */
+}
+
+.comment_part {
+    width: 556px;
+/*    display: inline-block;*/
+}
+
+.etc_part {
+    position: absolute;
+    overflow: hidden;
+    width: 28px;
+    height: 28px;
+    right: 10px;
+    bottom: 16px;
+/*    text-indent: 110%;*/
+/*    display: inline-block;*/
+}
+
+.etc_part button {
+    padding: 6px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.etc_part span {
+    width: 16px;
+    height: 16px;
+    background-position: -413px -58px;
+}
+
+/* sidebar : 우측 사이드바 시작 */
+.sidebar {
+    position: fixed;
+    right: 13%;
+    width: 293px;
+    height: 670px;
+}
+
+    /* 사이드바 유저 프로필 사진 공통 */
+.side_userpic {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.side_userinfo {
+    float: left;
+/*    margin-left: 14px;*/
+    height: 34px;
+    width: auto;
+    /* 세로 가운데 정렬 */
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: 64px;    /* img width(50px)와 원래 값 14px를 더한 값 */
+}
+
+.story_header {
+    margin-bottom: 12px;
+}
+
+.story_header span {
+    color: #999;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.story_header_seeall {
+    display: inline-block;
+    float: right;
+    color: #262626;
+    font-size: 12px;
+    line-height: 14px
+}
+
+.story_header_seeall::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.current_user, .recent_story {
+    position: relative;
+    height: 62px;
+}
+
+.current_user::after, .recent_story::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.side_userpic img {
+    width: 100%;
+    height: 100%;    
+    border-radius: 100%;
+}
+
+
+.current_userid, .story_userid {
+    color: #262626;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.current_userstatus, .story_written_by {
+    color: #999;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.instagram_information {
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+.instagram_information li {
+    display: inline-block;
+    
+}
+
+.instagram_information li:not(:last-child)::after {
+    content: "\00B7";
+    margin: 0 .25em;
+}
+
+.instagram_information a {
+    color: inherit;
+    text-transform: capitalize;
+}
+
+.instagram_information span {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

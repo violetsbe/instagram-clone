@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Instagram</title>
+<!--    <link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header_wrap">
+        <header class="header_navbar">
+            <div class="header_site">
+               <div class="header_site_inner">
+                <a href="#" class="go_feed">
+                    <span class="left_logo"></span>
+                </a>
+               </div>
+            </div>
+            <div class="header_search">
+                <input class="input_search" type="text" placeholder="검색">
+                <div class="header_search_inner">
+                    <span class="search_icon"></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header_nav">
+               <div class="find_people"><a href="#"></a></div>
+               <div class="activity_feed"><a href="#"></a></div>
+               <div class="profile"><a href="#"></a></div>
+            </div>
+        </header>
+<!--        START : 본문    -->
+        <div class="container">
+            <div class="container_wrap">
+                <div class="top_story">
+                   <!-- 인스타 스토리 표시부 -> 17-12-13 현재 사라짐.... -->
+                </div>
+               <!-- article_list : 전체 게시글을 담는 div -->
+                <div class="article_list">
+                   <!-- article_1  : 게시글 하나 시작 -->
+                    <article class="article">
+                        <header class="article_header">
+                            <div class="article_header_inner">
+                                <div class="header_profile_pic">
+                                    <a href="/pokemon/">
+                                        <img src="/images/articles/account_linefriends.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="header_user_id">
+                                    <a title="" href="#">linefriends</a>
+                                </div>                                
+                            </div>
+                        </header>
+                        <div class="article_photo">
+                            <div class="photo">
+                                <img src="/images/articles/photo_4.jpg" alt="">
+                            </div>
+                            <div class="photo_nav">
+                                <!-- 사진이 여러장일 때 나타나는 -->
+                            </div>
+                            <!-- 사진 위 태그 -->
+                            <!-- 인스타그램에는 iframe div가 하나 더 있었음 -->
+                        </div>
+                        <!-- article_contents : 해당 게시글 본문 텍스트, 좋아요, 댓글 -->
+                        <div class="article_contents">
+                            <section class="reaction_icons">
+                               <div class="reaction_icons_left">
+                                  <!-- like_this_liked : 좋아요가 눌린 상태의 아이콘 -->
+                                   <a class="like_this_liked" href="#"><span></span></a>
+                                   <a class="leave_comment" href="#"><span></span></a>
+                               </div>
+                               <div class="reaction_icons_right">
+                                   <a href="#" class="save_this"><span></span></a>
+                               </div>
+                            </section>
+                            <section class="how_many_likes">
+                                <div class="num_likes">
+                                    <a href="#">좋아요 
+                                    <span>343</span>개</a>
+                                </div>
+                            </section>
+                            <!-- 본문 내용과 댓글 -->
+                            <div class="text_and_comments">
+                                <ul>
+                                    <li class="text">
+                                       <a href="#" class="userid">pokemon_korea</a>
+                                        <span>팝업스토어 in 명동 상품 라인업 공개!😘💕
+                                        </span>
+                                        <a href="#">문구 더 보기</a>
+                                    </li>
+                                    <li class="view_all_comments">
+                                        <a href="#">댓글 더 보기</a>
+                                    </li>
+                                    <li class="comment">
+                                        <a class="userid" href="#">jiyounu</a><span class="comment"><a href="#" class="comment_tag notranslate">@kim_mado0613</a>다음주면 가능ㅋㅋ</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">jeongdahyeon219</a><span class="comment"><a href="#" class="comment_tag notranslate">@double_d_jewelry</a></span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">rudddiary</a><span class="comment">슬리퍼사러갑니다</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">abcdce2</a><span class="comment"><a href="#" class="comment_tag notranslate">@ming_drun</a>사조</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="datetime_part">
+                               <!-- 현재 시간과 작성 시간 비교해서 x일 전 표시 -->
+                                <a href="#">
+                                    <time class="written_by" datetime="2017-12-13T09:33:04.000Z" title="2017년 12월 13일">1일 전</time>
+                                </a>
+                            </div>
+                            <section class="comment_section">
+                               <div class="comment_part">
+                                    <form action="#" class="write_comment">
+                                        <textarea aria-label="댓글 달기..." placeholder="댓글 달기..."></textarea>
+                                    </form>
+                               </div>
+                            </section>
+                            <div class="etc_part">
+                                <button>
+                                <span><!-- 옵션 더 보기 --></span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- article_1  : 게시글 하나 끝 -->
+                    <article class="article">
+                        <header class="article_header">
+                            <div class="header_profile_pic">
+                                <a href="/pokemon/">
+                                    <img src="/images/articles/account_pokemon2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="header_user_id">
+                                <a title="" href="#">pokemon_korea</a>
+                            </div>
+                        </header>
+                        <div class="article_photo">
+                            <div class="photo">
+                                <img src="/images/articles/photo_3.jpg" alt="">
+                               <!-- 사진이 여러장일 때 사진 위에 나타나는 화살표 -->
+                            </div>
+                            <div class="photo_nav">
+                                <!-- 사진이 여러장일 때 사진 아래에 나타나는 -->
+                                <div class="photo_nav_spot">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="selected_spot"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="not_selected_spot"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="not_selected_spot"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="not_selected_spot"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="not_selected_spot"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 사진 위 태그 -->
+                            <!-- 인스타그램에는 iframe div가 하나 더 있었음 -->
+                        </div>
+                        <!-- article_contents : 해당 게시글 본문 텍스트, 좋아요, 댓글 -->
+                        <div class="article_contents">
+                            <section class="reaction_icons">
+                               <div class="reaction_icons_left">
+                                   <a class="like_this" href="#"><span></span></a>
+                                   <a class="leave_comment" href="#"><span></span></a>
+                               </div>
+                               <div class="reaction_icons_right">
+                                   <a href="#" class="save_this"><span></span></a>
+                               </div>
+                            </section>
+                            <section class="how_many_likes">
+                                <div class="num_likes">
+                                    <a href="#">좋아요 
+                                    <span>343</span>개</a>
+                                </div>
+                            </section>
+                            <!-- 본문 내용과 댓글 -->
+                            <div class="text_and_comments">
+                                <ul>
+                                    <li class="text">
+                                       <a href="#" class="userid">linefriends_kr</a>
+                                        <span>빨간 망토의 세 요정~💕 산타 프렌즈 인형 출시!</span>
+                                        <a href="#">문구 더 보기</a>
+                                    </li>
+                                    <li class="view_all_comments">
+                                        <a href="#">댓글 더 보기</a>
+                                    </li>
+                                    <li class="comment">
+                                        <a class="userid" href="#">jiyounu</a><span class="comment"><a href="#" class="comment_tag notranslate">@kim_mado0613</a>다음주면 가능ㅋㅋ</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">jeongdahyeon219</a><span class="comment"><a href="#" class="comment_tag notranslate">@double_d_jewelry</a></span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">rudddiary</a><span class="comment">슬리퍼 사러갑니다</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">abcdce2</a><span class="comment"><a href="#" class="comment_tag notranslate">@ming_drun</a>!!!</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="datetime_part">
+                               <!-- 현재 시간과 작성 시간 비교해서 x일 전 표시 -->
+                                <a href="#">
+                                    <time class="written_by" datetime="2017-12-13T09:33:04.000Z" title="2017년 12월 13일">1일 전</time>
+                                </a>
+                            </div>
+                            <section class="comment_section">
+                               <div class="comment_part">
+                                    <form action="#" class="write_comment">
+                                        <textarea aria-label="댓글 달기..." placeholder="댓글 달기..."></textarea>
+                                    </form>
+                               </div>
+                            </section>
+                            <div class="etc_part">
+                                <button>
+                                <span><!-- 옵션 더 보기 --></span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <header class="article_header">
+                            <div class="header_profile_pic">
+                                <a href="/pokemon/">
+                                    <img src="/images/articles/account_pokemon2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="header_user_id">
+                                <a title="" href="#">pokemon_korea</a>
+                            </div>
+                        </header>
+                        <div class="article_photo">
+                            <div class="photo">
+                                <img src="/images/articles/photo_5.jpg" alt="">
+                            </div>
+                            <div class="photo_nav">
+                                <!-- 사진이 여러장일 때 나타나는 -->
+                            </div>
+                            <!-- 사진 위 태그 -->
+                            <!-- 인스타그램에는 iframe div가 하나 더 있었음 -->
+                        </div>
+                        <!-- article_contents : 해당 게시글 본문 텍스트, 좋아요, 댓글 -->
+                        <div class="article_contents">
+                            <section class="reaction_icons">
+                               <div class="reaction_icons_left">
+                                  <!-- like_this_liked : 좋아요가 눌린 상태의 아이콘 -->
+                                   <a class="like_this_liked" href="#"><span></span></a>
+                                   <a class="leave_comment" href="#"><span></span></a>
+                               </div>
+                               <div class="reaction_icons_right">
+                                   <a href="#" class="save_this"><span></span></a>
+                               </div>
+                            </section>
+
+                            <section class="how_many_likes">
+                                <div class="num_likes">
+                                    <a href="#">좋아요 
+                                    <span>343</span>개</a>
+                                </div>
+                            </section>
+                            <!-- 본문 내용과 댓글 -->
+                            <div class="text_and_comments">
+                                <ul>
+                                    <li class="text">
+                                       <a href="#" class="userid">pokemon_korea</a>
+                                        <span>포켓몬 팝업스토어 in 명동 상품 라인업 공개!😘💕
+                                        </span>
+                                        <a href="#">문구 더 보기</a>
+                                    </li>
+                                    <li class="view_all_comments">
+                                        <a href="#">댓글 더 보기</a>
+                                    </li>
+                                    <li class="comment">
+                                        <a class="userid" href="#">jiyounu</a><span class="comment"><a href="#" class="comment_tag notranslate">@kim_mado0613</a>다음주면 가능ㅋㅋ</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">jeongdahyeon219</a><span class="comment"><a href="#" class="comment_tag notranslate">@double_d_jewelry</a></span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">rudddiary</a><span class="comment">슬리퍼사러갑니다</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">abcdce2</a><span class="comment"><a href="#" class="comment_tag notranslate">@ming_drun</a>사조</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="datetime_part">
+                               <!-- 현재 시간과 작성 시간 비교해서 x일 전 표시 -->
+                                <a href="#">
+                                    <time class="written_by" datetime="2017-12-13T09:33:04.000Z" title="2017년 12월 13일">1일 전</time>
+                                </a>
+                            </div>
+                            <section class="comment_section">
+                               <div class="comment_part">
+                                    <form action="#" class="write_comment">
+                                        <textarea aria-label="댓글 달기..." placeholder="댓글 달기..."></textarea>
+                                    </form>
+                               </div>
+                            </section>
+                            <div class="etc_part">
+                                <button>
+                                <span><!-- 옵션 더 보기 --></span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <header class="article_header">
+                            <div class="header_profile_pic">
+                                <a href="/pokemon/">
+                                    <img src="/images/articles/account_pokemon2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="header_user_id">
+                                <a title="" href="#">pokemon_korea</a>
+                            </div>
+                        </header>
+                        <div class="article_photo">
+                            <div class="photo">
+                                <img src="/images/articles/photo_2.jpg" alt="">
+                            </div>
+                            <div class="photo_nav">
+                                <!-- 사진이 여러장일 때 사진 아래에 나타나는 -->
+                                <div class="photo_nav_spot">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="selected_spot"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="not_selected_spot"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="not_selected_spot"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 사진 위 태그 -->
+                            <!-- 인스타그램에는 iframe div가 하나 더 있었음 -->
+                        </div>
+                        <!-- article_contents : 해당 게시글 본문 텍스트, 좋아요, 댓글 -->
+                        <div class="article_contents">
+                            <section class="reaction_icons">
+                               <div class="reaction_icons_left">
+                                   <a class="like_this_liked" href="#"><span></span></a>
+                                   <a class="leave_comment" href="#"><span></span></a>
+                               </div>
+                               <div class="reaction_icons_right">
+                                   <a href="#" class="save_this"><span></span></a>
+                               </div>
+                            </section>
+
+                            <section class="how_many_likes">
+                                <div class="num_likes">
+                                    <a href="#">좋아요 
+                                    <span>343</span>개</a>
+                                </div>
+                            </section>
+                            <!-- 본문 내용과 댓글 -->
+                            <div class="text_and_comments">
+                                <ul>
+                                    <li class="text">
+                                       <a href="#" class="userid">pokemon_korea</a>
+                                        <span>포켓몬 팝업스토어 in 명동 상품 라인업 공개!😘💕
+                                        </span>
+                                        <a href="#">문구 더 보기</a>
+                                    </li>
+                                    <li class="view_all_comments">
+                                        <a href="#">댓글 더 보기</a>
+                                    </li>
+                                    <li class="comment">
+                                        <a class="userid" href="#">jiyounu</a><span class="comment"><a href="#" class="comment_tag notranslate">@kim_mado0613</a>다음주면 가능ㅋㅋ</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">jeongdahyeon219</a><span class="comment"><a href="#" class="comment_tag notranslate">@double_d_jewelry</a></span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">rudddiary</a><span class="comment">슬리퍼사러갑니다</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">abcdce2</a><span class="comment"><a href="#" class="comment_tag notranslate">@ming_drun</a>사조</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="datetime_part">
+                               <!-- 현재 시간과 작성 시간 비교해서 x일 전 표시 -->
+                                <a href="#">
+                                    <time class="written_by" datetime="2017-12-13T09:33:04.000Z" title="2017년 12월 13일">1일 전</time>
+                                </a>
+                            </div>
+                            <section class="comment_section">
+                               <div class="comment_part">
+                                    <form action="#" class="write_comment">
+                                        <textarea aria-label="댓글 달기..." placeholder="댓글 달기..."></textarea>
+                                    </form>
+                               </div>
+                            </section>
+                            <div class="etc_part">
+                                <button>
+                                <span><!-- 옵션 더 보기 --></span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                                                <header class="article_header">
+
+                            <div class="header_profile_pic">
+                                <a href="/pokemon/">
+                                    <img src="/images/articles/account_pokemon2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="header_user_id">
+                                <a title="" href="#">pokemon_korea</a>
+                            </div>
+                        </header>
+                        <div class="article_photo">
+                            <div class="photo">
+                                <img src="/images/articles/photo_4.jpg" alt="">
+                            </div>
+                            <div class="photo_nav">
+                                <!-- 사진이 여러장일 때 나타나는 -->
+                            </div>
+                            <!-- 사진 위 태그 -->
+                            <!-- 인스타그램에는 iframe div가 하나 더 있었음 -->
+                        </div>
+                        <!-- article_contents : 해당 게시글 본문 텍스트, 좋아요, 댓글 -->
+                        <div class="article_contents">
+                            <section class="reaction_icons">
+                                <a class="like_this" href="#"><span></span></a>
+                                <a class="leave_comment" href="#"><span></span></a>
+                                <a href="#" class="save_this"><span></span></a>
+                            </section>
+                            <section class="how_many_likes">
+                                <div class="num_likes">
+                                    <a href="#">좋아요 
+                                    <span>343</span>개</a>
+                                </div>
+                            </section>
+                            <!-- 본문 내용과 댓글 -->
+                            <div class="text_and_comments">
+                                <ul>
+                                    <li class="text">
+                                       <a href="#" class="userid">pokemon_korea</a>
+                                        <span>포켓몬 팝업스토어 in 명동 상품 라인업 공개!😘💕
+                                        </span>
+                                        <a href="#">문구 더 보기</a>
+                                    </li>
+                                    <li class="view_all_comments">
+                                        <a href="#">댓글 더 보기</a>
+                                    </li>
+                                    <li class="comment">
+                                        <a class="userid" href="#">jiyounu</a><span class="comment"><a href="#" class="comment_tag notranslate">@kim_mado0613</a>다음주면 가능ㅋㅋ</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">jeongdahyeon219</a><span class="comment"><a href="#" class="comment_tag notranslate">@double_d_jewelry</a></span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">rudddiary</a><span class="comment">슬리퍼사러갑니다</span>
+                                    </li>
+                                    <li class="comment">
+                                        <a href="#" class="userid">abcdce2</a><span class="comment"><a href="#" class="comment_tag notranslate">@ming_drun</a>이거야</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="datetime_part">
+                               <!-- 현재 시간과 작성 시간 비교해서 x일 전 표시 -->
+                                <a href="#">
+                                    <time class="written_by" datetime="2017-12-13T09:33:04.000Z" title="2017년 12월 13일">1일 전</time>
+                                </a>
+                            </div>
+                            <section class="comment_section">
+                               <div class="comment_part">
+                                    <form action="#" class="write_comment">
+                                        <textarea aria-label="댓글 달기..." placeholder="댓글 달기..."></textarea>
+                                    </form>
+                               </div>
+                            </section>
+                            <div class="etc_part">
+                                <button>
+                                <span><!-- 옵션 더 보기 --></span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- side_story : 우측 인스타 스토리 표시부 -->
+                <div class="sidebar">
+                    <div class="current_user">
+                        <div class="side_userpic current_profile_pic">
+                            <a href="#"><img src="/images/articles/current_user_pic.jpg" alt=""></a>
+                        </div>
+                        <div class="side_userinfo current_user_info">
+                            <div class="current_userid">
+                                <span>violet</span>
+                            </div>
+                            <div class="current_userstatus">
+                                <span>BR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="story_header">
+                        <span>스토리</span>
+                        <div class="story_header_seeall">
+                        <a href="#">모두 보기</a>
+                        </div>
+                    </div>
+                    <div class="story_box">
+                        <div class="story_box_inner">
+                            <div class="recent_story">
+                                <a href="#">
+                                    <div class="side_userpic story_user_pic">
+                                       <!-- canvas : 인스타스토리 테두리 원 그리는 부분? -->
+                                        <span>
+                                        <img src="/images/articles/profilepic_instagram.jpg" alt="">
+                                        <!-- after 선택자 -->
+                                        </span>
+                                    </div>
+                                    <div class="side_userinfo story_user_info">
+                                        <div class="story_userid"><span>instagram</span></div>
+                                        <div class="story_written_by">
+                                            <time datetime="2017-12-15T10:03:39.000Z" title="2017년 12월 15일">27분 전</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="recent_story">
+                                <a href="#">
+                                    <div class="side_userpic story_user_pic">
+                                       <!-- canvas : 인스타스토리 테두리 원 그리는 부분? -->
+                                        <span>
+                                        <img src="/images/articles/profilepic_toofaced.jpg" alt="">
+                                        <!-- after 선택자 -->
+                                        </span>
+                                    </div>
+                                    <div class="side_userinfo story_user_info">
+                                        <div class="story_userid"><span>toofaced</span></div>
+                                        <div class="story_written_by">
+                                            <time datetime="2017-12-15T10:03:39.000Z" title="2017년 12월 15일">27분 전</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="recent_story">
+                                <a href="#">
+                                    <div class="side_userpic story_user_pic">
+                                       <!-- canvas : 인스타스토리 테두리 원 그리는 부분? -->
+                                        <span>
+                                        <img src="/images/articles/profilepic_yslbeauty.jpg" alt="">
+                                        <!-- after 선택자 -->
+                                        </span>
+                                    </div>
+                                    <div class="side_userinfo story_user_info">
+                                        <div class="story_userid"><span>yslbeauty</span></div>
+                                        <div class="story_written_by">
+                                            <time datetime="2017-12-15T10:03:39.000Z" title="2017년 12월 15일">27분 전</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="recent_story">
+                                <a href="#">
+                                    <div class="side_userpic story_user_pic">
+                                       <!-- canvas : 인스타스토리 테두리 원 그리는 부분? -->
+                                        <span>
+                                        <img src="/images/articles/profilepic_linefriends.jpg" alt="">
+                                        <!-- after 선택자 -->
+                                        </span>
+                                    </div>
+                                    <div class="side_userinfo story_user_info">
+                                        <div class="story_userid"><span>linefriends</span></div>
+                                        <div class="story_written_by">
+                                            <time datetime="2017-12-15T10:03:39.000Z" title="2017년 12월 15일">27분 전</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="instagram_information">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Instagram 정보</a></li>
+                                <li><a href="#">지원</a></li>
+                                <li><a href="#">블로그</a></li>
+                                <li><a href="#">홍보 센터</a></li>
+                                <li><a href="#">API</a></li>
+                                <li><a href="#">채용 정보</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">약관</a></li>
+                                <li><a href="#">디렉터리</a></li>
+                                <li><a href="#">언어</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <span>© 2017 Instagram</span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+        <!-- footer -->
+<!--
+        <div class="footer">
+            
+        </div>
+-->
+    </div>
+</body>
+</html>
