@@ -1,1 +1,1 @@
-# php-instagram-clone
+# instagram-clone
